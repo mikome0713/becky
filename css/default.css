@@ -246,7 +246,11 @@ h2 {
   font-size: 16pt; }
 
 h3 {
-  font-size: 30pt; }
+  font-size: 20pt;
+  letter-spacing: 4px; }
+  h3 span {
+    font-size: 25pt !important;
+    letter-spacing: 4px; }
 
 span {
   font-size: 11pt; }
@@ -361,7 +365,7 @@ section {
         color: #ff8a5d; }
       #top .top_text .text .text_in button {
         color: #fff;
-        font-size: 12pt;
+        font-size: 10pt;
         background: none;
         border-radius: 6px;
         line-height: 50px;
@@ -397,7 +401,7 @@ section {
       max-width: 780px; }
       #about .container .container_inner .text {
         padding-top: 80px;
-        font-size: 18pt;
+        font-size: 16pt;
         text-align: center;
         font-weight: bold; }
   #about img {
