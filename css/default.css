@@ -533,22 +533,22 @@ section {
 #web h1 span:after, #web h1 span:before {
   background: #777 !important; }
 
-/*banner*/
-#banner {
+/*movie*/
+#movie {
   background-color: #e4e4e4; }
-  #banner .banner {
+  #movie .movie {
     position: relative;
     float: left;
     width: 585px;
     padding: 0 10px; }
-    #banner .banner ul {
+    #movie .movie ul {
       margin: 0; }
-      #banner .banner ul li {
+      #movie .movie ul li {
         position: relative;
         float: left;
         width: 20%;
         padding: 2px; }
-        #banner .banner ul li span {
+        #movie .movie ul li span {
           position: absolute;
           background: rgba(255, 255, 255, 0.5);
           height: calc(100% - 4px);
@@ -560,13 +560,27 @@ section {
           -moz-transition: all 0.3s ease 0s;
           -ms-transition: all 0.3s ease 0s;
           -o-transition: all 0.3s ease 0s; }
-          #banner .banner ul li span:hover {
+          #movie .movie ul li span:hover {
             background: rgba(230, 140, 41, 0.5);
             opacity: 1; }
-  #banner h1 {
+  #movie h1 {
     padding-top: 115px; }
-    #banner h1 span:after, #banner h1 span:before {
+    #movie h1 span:after, #movie h1 span:before {
       background: #444 !important; }
+
+/*RWD Youtube 以及 Vimeo*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 #ui .ui {
   position: relative;
@@ -644,20 +658,6 @@ footer {
     footer .footer span {
       font-size: 10pt; }
 
-/*RWD Youtube 以及 Vimeo*/
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden; }
-  .video-container iframe, .video-container object, .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
 @media only screen and (max-width: 1200px) {
   #top .top_photo {
     background-position: 50%; }
@@ -671,9 +671,9 @@ footer {
     width: 450px; }
   #works {
     width: 290px; }
-  #banner .banner {
+  #movie .movie {
     width: 450px; }
-    #banner .banner h1 {
+    #movie .movie h1 {
       padding-top: 75px; }
   #ui .ui {
     width: 450px; }
@@ -708,7 +708,7 @@ footer {
     #works p strong {
       font-size: 12pt;
       font-weight: bolder; }
-  #banner .content {
+  #movie .content {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -725,22 +725,22 @@ footer {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     padding-top: 0 !important; }
-    #banner .content .bounceInLeft {
+    #movie .content .bounceInLeft {
       order: 2;
       -webkit-box-ordinal-group: 2;
       -moz-box-ordinal-group: 2;
       -ms-flex-order: 2;
       -webkit-order: 2;
       padding-top: 80px; }
-    #banner .content .bounceInRight {
+    #movie .content .bounceInRight {
       order: 1;
       -webkit-box-ordinal-group: 1;
       -moz-box-ordinal-group: 1;
       -ms-flex-order: 1;
       -webkit-order: 1; }
-  #banner .banner {
+  #movie .movie {
     width: 100%; }
-    #banner .banner h1 {
+    #movie .movie h1 {
       padding: 0; }
   #ui .content {
     padding-top: 0 !important; }
@@ -777,7 +777,7 @@ footer {
     #works p strong {
       font-size: 20pt;
       top: 40%; }
-  #banner .content .bounceInLeft {
+  #movie .content .bounceInLeft {
     padding-top: 40px; }
   #ui .ui {
     width: 500px !important; }
@@ -799,7 +799,7 @@ footer {
     padding-top: 30px; }
   #about .container .container_inner {
     max-width: 500px; }
-  #banner .content .bounceInLeft {
+  #movie .content .bounceInLeft {
     padding-top: 30px; } }
 
 @media only screen and (max-width: 600px) {
